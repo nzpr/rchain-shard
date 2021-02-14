@@ -1,0 +1,12 @@
+ecdsa
+pycryptodome
+eth-hash[pycryptodome]
+cryptography
+influxdb
+pyhocon
+pyjq
+natsort
+pyyaml
+websockets
+requests
+git+https://github.com/rchain/pyrchain@a1669067a5f71cc6e57317e7d345d473c7d35464
