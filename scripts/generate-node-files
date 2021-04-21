@@ -28,7 +28,7 @@ casper.validator-public-key = {pub_key}
 casper.validator-private-key = {key}
 protocol-server.host = {hostname}
 protocol-server.allow-private-addresses = true
-casper.synchrony-constraint-threshold = 0.99
+casper.synchrony-constraint-threshold = 0.67
 metrics.zipkin = true
 """.format(sk=sk, pub_key=pub_key, key=key, hostname=hostname)
 

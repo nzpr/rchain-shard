@@ -18,7 +18,8 @@ apt-get install -y --no-install-recommends wget apt-transport-https gnupg2
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 echo "deb https://adoptopenjdk.jfrog.io/adoptopenjdk/deb buster main" | sudo tee /etc/apt/sources.list.d/adoptopenjdk.list
 apt-get update
-apt install -y --no-install-recommends adoptopenjdk-15-openj9-jre
+#apt install -y --no-install-recommends adoptopenjdk-15-openj9-jre
+apt install -y --no-install-recommends openjdk-11-jre-headless
 
 #curl -sSfL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 #echo "deb http://packages.cloud.google.com/apt gcsfuse-bionic main" \
@@ -33,7 +34,7 @@ apt install -y --no-install-recommends \
 		python3 python3-venv python3-dev \
 		unzip graphviz subversion
 
-wget https://storage.googleapis.com/public.bucket.rchain-dev.tk/rnode_0.10.0-145-gab6de27_all.deb -O ~/rnode.deb
+wget https://storage.googleapis.com/public.bucket.rchain-dev.tk/rnode_0.11.0-alpha.1-34-ge56365a_all.deb -O ~/rnode.deb
 dpkg -i ~/rnode.deb
 
 #apt install -y --no-install-recommends --no-upgrade docker-ce
